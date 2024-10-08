@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container box-principal">
+
+        <div class="row">
+
+            <div class="col-md-6 col-sm-12 select-box">
+                <p class="titulo">Fabricante</p>
+                <select id="fabricanteSelect" class="form-control ">
+                    <option value="Sem Informação">Sem Informação</option>
+                    <option value="BioConect">Bio Conect</option>
+                    <option value="BioInovation">Bio Inovation</option>
+                    <option value="Conexão">Conexão</option>
+                    <option value="DentFix">Dent Fix</option>
+                    <option value="DentoFlex">DentoFlex</option>
+                    <option value="Derig">Derig</option>
+                    <option value="ImplacilDeBortoli">Implacil de Bortoli</option>
+                    <option value="Implus-Baumer">Implus - Baumer</option>
+                    <option value="INP">INP</option>
+                    <option value="IntraOss">IntraOss</option>
+                    <option value="Medens">Medens</option>
+                    <option value="Neodent">Neodent</option>
+                    <option value="PiBranemark">Pi Branemark</option>
+                    <option value="Pross">Pross</option>
+                    <option value="SignoVinces">Signo Vinces</option>
+                    <option value="Sin">SIN</option>
+                    <option value="Singular">Singular</option>
+                    <option value="Systhex">Systhex</option>
+                    <option value="TitaniumFix">TitaniumFix</option>
+
+
+                </select>
+            </div>
+
+            <div class="col-md-6 col-sm-12 select-box">
+                <p class="titulo">Nome Comercial</p>
+                <select id="nomeComercialSelect" class="select2 form-control ">
+                    <option value="Sem Informação">Sem Informação</option>
+                    <option value="Advanced">Advanced</option>
+                    <option value="AdvancedCônico">Advanced Cônico</option>
+                    <option value="AdvancedEstreitoCilíndrico">Advanced Estreito Cilíndrico</option>
+                    <option value="AdvancedEstreitoCônico">Advanced Estreito Cônico</option>
+                    <option value="AlvimCM">Alvim CM</option>
+                    <option value="AlvimIIPlus">Alvim II Plus</option>
+                    <option value="AlvimTi">Alvim Ti</option>
+                    <option value="Amplified">Amplified</option>
+                    <option value="AmplifiedFuncional">Amplified Funcional</option>
+                    <option value="Ar/ConectAR">Ar/Conect AR</option>
+                    <option value="Ares">Ares</option>
+                    <option value="Arrow">Arrow</option>
+                    <option value="Attract">Attract</option>
+                    <option value="AttractsAllure(short)">Attracts Allure (short)</option>
+                    <option value="Avantt">Avantt</option>
+                    <option value="BioCM">BioCM</option>
+                    <option value="BioDirectCilindrico">BioDirect Cilindrico</option>
+                    <option value="BioDirectCônico">BioDirect Cônico</option>
+                    <option value="BioHe">BioHe</option>
+                    <option value="BioMorse">BioMorse</option>
+                    <option value="BioMorseEz">BioMorseEz</option>
+                    <option value="BioMorseEz">BioMorseEz Classic</option>
+                    <option value="BioMorseSWE">BioMorseSWE</option>
+                    <option value="BioMorseXP">BioMorse XP</option>
+                    <option value="BiodentHex">Biodent Hex</option>
+                    <option value="BioneckCMH3.3">Bioneck CMH 3.3</option>
+                    <option value="BioneckCMH3.5">Bioneck CMH 3.5</option>
+                    <option value="BioneckCMH3.75">Bioneck CMH 3.75</option>
+                    <option value="BioneckCMH4.3">Bioneck CMH 4.3</option>
+                    <option value="BioneckTri">Bioneck Tri</option>
+                    <option value="b-fix">b-fix</option>
+                    <option value="b-fixProfile">b-fix Profile</option>
+                    <option value="Classic">Classic</option>
+                    <option value="Classic-CI">Classic-CI</option>
+                    <option value="Classic-Cits">Classic-Cits</option>
+                    <option value="Classic-INCR">Classic-IN CR</option>
+                    <option value="ClassicCilindrico">Classic Cilindrico</option>
+                    <option value="ClassicConico">Classic Conico</option>
+                    <option value="CmÁpiceCônico">CM Ápice Cônico</option>
+                    <option value="CmCônico">CM Cônico</option>
+                    <option value="CMCilíndrico">CM Cilíndrico</option>
+                    <option value="CMGoDirect">CM Go Direct</option>
+                    <option value="ConeFIX">Cone FIX</option>
+                    <option value="ConeMorse">Cone Morse</option>
+                    <option value="Conect Cônico">Conect Cônico</option>
+                    <option value="Cônico">Cônico</option>
+                    <option value="CônicoCM(Short)">Cônico CM (Short)</option>
+                    <option value="CônicoCilíndrico">Cônico Cilíndrico</option>
+                    <option value="CônicoHE">Cônico HE</option>
+                    <option value="CônicoHE5/6">Cônico HE 5/6</option>
+                    <option value="CônicoSwitch">Cônico Switch</option>
+                    <option value="CilíndricoHE">Cilíndrico HE</option>
+                    <option value="CilíndricoSA">Cilíndrico SA</option>
+                    <option value="CilíndricoSwitch">Cilíndrico Switch</option>
+                    <option value="DriveGM">Drive GM</option>
+                    <option value="DriveGMTM">Drive GM TM</option>
+                    <option value="DriveTi">Drive Ti</option>
+                    <option value="DueCone">Due Cone</option>
+                    <option value="Duocon">Duocon</option>
+                    <option value="DynamicCMH3.0">Dynamic CMH 3.0</option>
+                    <option value="DynamicCMH4.3">Dynamic CMH 4.3</option>
+                    <option value="DynamicCMH5.0">Dynamic CMH 5.0</option>
+                    <option value="Dynamica">Dynamica</option>
+                    <option value="Double">Double</option>
+                    <option value="Epikut(ILCM...)">Epikut (ILCM...)</option>
+                    <option value="EpikutHE(ILHE...)">Epikut HE (ILHE...)</option>
+                    <option value="EpikutPlus(ILCM...)">Epikut Plus (ILCM...)</option>
+                    <option value="Estetic-CI">Estetic-CI</option>
+                    <option value="Estetic-INCR">Estetic-IN CR</option>
+                    <option value="Ex">Ex</option>
+                    <option value="ExCônico">Ex Cônico</option>
+                    <option value="Facility">Facility</option>
+                    <option value="Fit-HexCI">Fit-Hex CI</option>
+                    <option value="FlashTorq/ARTorq">Flash Torq/AR Torq</option>
+                    <option value="Grip">Grip</option>
+                    <option value="HexágonoExterno">Hexágono Externo</option>
+                    <option value="HexágonoInterno">Hexágono Interno</option>
+                    <option value="HEX-SFuncional">HEX-S Funcional</option>
+                    <option value="HEX-SSólido">HEX-S Sólido</option>
+                    <option value="HiCilíndricoSwitch">HI Cilíndrico Switch</option>
+                    <option value="HiConico">HI Conico</option>
+                    <option value="HiCônicoSwitch">HI Cônico Switch</option>
+                    <option value="HiOsseocompressivo">HI Osseocompressivo</option>
+                    <option value="Implus/Triplus">Implus/Triplus</option>
+                    <option value="ImplusCônico">Implus Cônico</option>
+                    <option value="InConvencional">In Convencional</option>
+                    <option value="Infra">Infra</option>
+                    <option value="Integra">Integra</option>
+                    <option value="i-fix">i-fix</option>
+                    <option value="i-fixGroove">i-fix Groove</option>
+                    <option value="KORTHEX">KORT HEX</option>
+                    <option value="Maestro">Maestro</option>
+                    <option value="MaestroCMAR">Maestro CM AR</option>
+                    <option value="MaestroCônicoHE">Maestro Cônico HE</option>
+                    <option value="MaxHI">Max HI</option>
+                    <option value="MaxPlusHI">MaxPlus HI</option>
+                    <option value="MorseTaper">Morse Taper</option>
+                    <option value="PluscutHI">Pluscut HI</option>
+                    <option value="Revolution(SCO...)">Revolution (SCO...)</option>
+                    <option value="Revolution(Summ34...)">Revolution (Summ34...)</option>
+                    <option value="Revolution(SUR...)">Revolution (SUR...)</option>
+                    <option value="RevolutionCompact">Revolution Compact</option>
+                    <option value="Search">Search</option>
+                    <option value="Short">Short</option>
+                    <option value="Slim(ITRS3.2)">Slim (ITRS3.2)</option>
+                    <option value="Slim(ITRS4.1)">Slim (ITRS4.1)</option>
+                    <option value="StrongSWC(CMSW...)">Strong SWC (CMSW...)</option>
+                    <option value="StrongSWHE(SCW37...)">Strong SW HE (SCW37...)</option>
+                    <option value="StrongSWHE(SCW45...)">Strong SW HE (SCW45...)</option>
+                    <option value="StrongSWHE(SCW50...)">Strong SW HE (SCW50...)</option>
+                    <option value="StrongSWHI(SW...)">Strong SW HI (SW...)</option>
+                    <option value="StrongSWMorse(SWCM)">Strong SW Morse (SWCM)</option>
+                    <option value="Summalis">Summalis</option>
+                    <option value="Summaliseasy">Summalis easy</option>
+                    <option value="Supreme">Supreme</option>
+                    <option value="Supreme Classic">Supreme Classic</option>
+                    <option value="TitaOssAdvanced">TitaOss Advanced</option>
+                    <option value="TitaOssCônico">TitaOss Cônico</option>
+                    <option value="TitaOssExtract">TitaOss Extract</option>
+                    <option value="TitamaxCM">Titamax CM</option>
+                    <option value="TitamaxCMCortical">Titamax CM Cortical</option>
+                    <option value="TitamaxIIPlusCortical">Titamax II Plus Cortical</option>
+                    <option value="TitamaxTiCortical">Titamax Ti Cortical</option>
+                    <option value="TitamaxWS">Titamax WS</option>
+                    <option value=" TitamaxGMTM">Titamax GM TM</option>
+                    <option value="TorqueInt.Switch">Torque Int. Switch</option>
+                    <option value="Triex">Triex</option>
+                    <option value="Tryon">Tryon</option>
+                    <option value="Tryon/TryonCY(SA...)">Tryon/Tryon CY (SA...)</option>
+                    <option value="TryonCO">Tryon CO</option>
+                    <option value="TryonPE(SAE...)">Tryon PE (SAE)</option>
+
+                </select>
+            </div>
+
+        </div>
+
+
+        <div class="row">
+
+            <div class="col-md-6 col-sm-12 select-box">
+                <p class="titulo">Tipo de Conexao</p>
+                <select id="tipoConexaoSelect" class="form-control">
+                    <option value="Sem Informação">Sem Informação</option>
+                    <option value="CONEMORSE">CONE MORSE</option>
+                    <option value="CONEXÃOEXTERNA">CONEXÃO EXTERNA</option>
+                    <option value="CONEXÃOINTERNA">CONEXÃO INTERNA</option>
+                </select>
+            </div>
+
+            <div class="col-md-6 col-sm-12 select-box">
+                <p class="titulo">Implante Dimensao</p>
+                <select id="dimensaoSelect" class="form-control">
+                    <option value="Sem Informação">Sem Informação</option>
+                    <option value="1.6mm">1.6</option>
+                    <option value="2.0">2.0</option>
+                    <option value="2.5">2.5</option>
+                    <option value="2.7">2.7</option>
+                    <option value="2.8">2.8</option>
+                    <option value="3.0">3.0</option>
+                    <option value="3.25">3.25</option>
+                    <option value="3.3">3.3</option>
+                    <option value="3.5">3.5</option>
+                    <option value="3.75">3.75</option>
+                    <option value="4.0">4.0</option>
+                    <option value="4.1">4.1</option>
+                    <option value="4.3">4.3</option>
+                    <option value="5.0">5.0</option>
+                    <option value="6.0">6.0</option>
+                </select>
+            </div>
+
+        </div>
+
+
+        <div class="row">
+
+            <div class="col-md-6 col-sm-12 select-box ">
+                <p class="titulo">Rosca</p>
+                <select id="roscaSelect" class="form-control">
+                    <option value="Sem Informação">Sem Informação</option>
+                    <option value="1.4mm">1.4</option>
+                    <option value="1.6mm">1.6</option>
+                    <option value="1.8mm">1.8</option>
+                    <option value="2.0mm">2.0</option>
+                    <option value="2.4mm">2.4</option>
+                    <option value="2.5mm">2.5</option>
+                </select>
+            </div>
+
+            <div class="col-md-6 col-sm-12 select-box">
+                <p class="titulo">Largura do Hexagono</p>
+                <select id="larguraHexagonoSelect" class="form-control">
+                    <option value="Sem Informação">Sem Informação</option>
+                    <option value="2.00mm">2.0</option>
+                    <option value="2.25mm">2.25</option>
+                    <option value="2.36mm">2.36</option>
+                    <option value="2.37mm">2.37</option>
+                    <option value="2.4mm">2.4</option>
+                    <option value="2.5mm">2.5</option>
+                    <option value="2.7mm">2.7</option>
+                    <option value="3.0mm">3.0</option>
+                    <option value="3.3mm">3.3</option>
+
+                </select>
+            </div>
+
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-6 col-sm-12 select-box">
+                <p class="titulo">Altura do Hexagono</p>
+                <select id="alturaHexagonoSelect" class="form-control">
+                    <option value="Na">Na</option>
+                    <option value="0.7">0.7</option>
+                    <option value="1.0">1.0</option>
+
+                </select>
+            </div>
+
+            <div class="col-md-3 col-sm-12 select-box">
+                <p class="titulo">Salvar</p>
+                <button id="salvarButton" type="button" class="btn "
+                    style="background-color: #0c2634; color: white;">Salvar</button>
+            </div>
+
+            <div class="col-md-3 col-sm-12 select-box">
+                <p class="titulo">Codigo</p>
+                <p id="codigoFinal"></p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

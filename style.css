@@ -1,0 +1,28 @@
+body{
+    background-color:#f8f8f8;
+    background-image: url(logo-rp.png);
+    background-repeat: no-repeat;
+   background-position: top center;
+}
+
+.box-principal {
+    width: 100%;
+    max-width: 800px; /* Ajuste este valor conforme necessário */
+    margin: 20px auto; /* Centraliza a caixa horizontalmente e dá espaço vertical */
+    border: 1px solid #b8b8b8;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-top: 300px;
+}
+.select-box{
+    padding-top: 10px;
+}
+
+.titulo{
+    color: #0c2634;
+    font-size: 20px;
+    font-weight: 600;
+}
+
